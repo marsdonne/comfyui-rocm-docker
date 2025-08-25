@@ -3,7 +3,7 @@ WORKDIR /opt
 RUN git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git
 WORKDIR /opt/ComfyUI
 
-FROM ubuntu:latest
+FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Add render/video groups
