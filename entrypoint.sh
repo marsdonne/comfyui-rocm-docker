@@ -9,6 +9,7 @@ if [ ! -d "$VENV_DIR" ]; then
 
     echo "Installing PyTorch and dependencies..."
     pip install --upgrade pip
+    pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
     pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2
     
     echo "Installing ComfyUI requirements..."
